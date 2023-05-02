@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<h1>Room Page</h1>
+{{for rooms in room }}
+{{ if rooms.id == 3}}
+    <div><h1>{{rooms.name}}....{{rooms.description}}....{{rooms.updated}}</h1></div>
+<!-- <img src='{% static "Slider2.jpg" %}' alt="Not working da..." > -->
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<h1>Room Page</h1>
+
+<div>
+    {% for rooms in ok %}
+        <div><h1>{{rooms.name}}....{{rooms.description}}....{{rooms.updated}}</h1></div>
+    {% endfor %}
+</div>
+{% endblock content %}
